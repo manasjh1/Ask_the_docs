@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    image: manasjh15/ask-docs-app:v2
+    command: uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
+    restart: always
+
+  frontend:
+    image: manasjh15/ask-docs-app:v2
+    command: streamlit run frontend/app.py --server.port 8501 --server.address 0.0.0.0
+    restart: always
+    environment:
+      - API_URL=http://backend:8000
+    depends_on:
+      - backend
