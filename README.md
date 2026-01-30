@@ -5,6 +5,7 @@
 ## Live Demo
 
 🔗 **Live Application:** [https://askdocsgroup-gtgsecb4ewg2gtep.canadacentral-01.azurewebsites.net/](https://askdocsgroup-gtgsecb4ewg2gtep.canadacentral-01.azurewebsites.net/)
+
 *(Hosted on Azure Web Apps using Docker containers)*
 
 ---
@@ -120,5 +121,6 @@ The system follows a microservices-based, containerized architecture:
 ## License
 
 This project is intended for educational and demonstration purposes.
+
 
 
